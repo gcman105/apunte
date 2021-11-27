@@ -29,4 +29,6 @@ func main() {
     fmt.Printf("IN=%s  OUT=%s\n", inpath, outpath)
     fmt.Printf("Printer=%s\n", config.Printer.Name)
     fmt.Printf("FileExt=%s\n", config.Filetypes.FileExt)
+
+    util.StartWatcher(config)
 }                                     

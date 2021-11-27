@@ -2,8 +2,8 @@ Apath = "~/temp/a"
 Bpath = "~/temp/b"
 
 [paths]
-INpath = "~/temp/in"
-OUTpath = "~/temp/out"
+INpath = "/Users/gcman105/temp/in/"
+OUTpath = "~/temp/out/"
 
 [printer]
 name = "default"
