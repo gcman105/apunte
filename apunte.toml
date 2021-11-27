@@ -1,9 +1,12 @@
-INpath = "~/temp/in"
-OUTpath = "~/temp/out"
-
-[paths]
 Apath = "~/temp/a"
 Bpath = "~/temp/b"
 
-[output]
-file = "out.txt"
+[paths]
+INpath = "~/temp/in"
+OUTpath = "~/temp/out"
+
+[printer]
+name = "default"
+
+[filetypes]
+FileExt = "pdf"

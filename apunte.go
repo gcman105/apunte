@@ -22,11 +22,11 @@ func main() {
     }
 
     fmt.Println(config)
-    fmt.Println(config.Out.File)
 
-    inpath := config.INpath
-    outpath := config.OUTpath
+    inpath := config.Paths.INpath
+    outpath := config.Paths.OUTpath
 
     fmt.Printf("IN=%s  OUT=%s\n", inpath, outpath)
-    fmt.Printf("A=%s  B=%s\n", config.Paths.Apath, config.Paths.Bpath)
+    fmt.Printf("Printer=%s\n", config.Printer.Name)
+    fmt.Printf("FileExt=%s\n", config.Filetypes.FileExt)
 }                                     

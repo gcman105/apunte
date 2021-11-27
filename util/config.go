@@ -4,18 +4,23 @@ import (
 	"github.com/spf13/viper"
 )
 
-type OutputConfig struct {
-    File string `unmarshal:"file"`
+type PrinterConfig struct {
+    Name string `unmarshal:"name"`
+}
+
+type FiletypesConfig struct {
+    FileExt string `unmarshal:"FileExt"`
 }
 
 type Config struct {
-    INpath string `unmarshal:"INpath"`
-    OUTpath string `unmarshal:"OUTpath"`
+    Apath string `unmarshal:"Apath"`
+    Bpath string `unmarshal:"Bpath"`
     Paths struct {
-        Apath string `unmarshal:"paths.Apath"`
-        Bpath string `unmarshal:"paths.Bpath"`
+        INpath string `unmarshal:"paths.INpath"`
+        OUTpath string `unmarshal:"paths.OUTpath"`
     }
-    Out OutputConfig `mapstructure:"output"`
+    Printer PrinterConfig `mapstructure:"printer"`
+    Filetypes FiletypesConfig `mapstructure:"filetypes"`
 }
 
 func LoadConfig(path string) (config Config, err error) {
