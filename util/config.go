@@ -4,6 +4,10 @@ import (
 	"github.com/spf13/viper"
 )
 
+type OutputConfig struct {
+    File string `unmarshal:"file"`
+}
+
 type Config struct {
     INpath string `unmarshal:"INpath"`
     OUTpath string `unmarshal:"OUTpath"`
@@ -11,6 +15,7 @@ type Config struct {
         Apath string `unmarshal:"paths.Apath"`
         Bpath string `unmarshal:"paths.Bpath"`
     }
+    Out OutputConfig `mapstructure:"output"`
 }
 
 func LoadConfig(path string) (config Config, err error) {

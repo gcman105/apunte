@@ -4,3 +4,6 @@ OUTpath = "~/temp/out"
 [paths]
 Apath = "~/temp/a"
 Bpath = "~/temp/b"
+
+[output]
+file = "out.txt"

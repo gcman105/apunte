@@ -22,6 +22,7 @@ func main() {
     }
 
     fmt.Println(config)
+    fmt.Println(config.Out.File)
 
     inpath := config.INpath
     outpath := config.OUTpath
