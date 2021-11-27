@@ -1,0 +1,7 @@
+INpath: "~/temp/in"
+OUTpath: "~/temp/out"
+
+paths:
+  - Apath: "~/temp/a"
+  - Bpath: "~/temp/b"
+
